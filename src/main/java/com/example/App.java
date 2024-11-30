@@ -6,7 +6,7 @@ import java.util.Scanner;
     public class App {
         public static void main(String[]args) {
             System.out.println("=== Detector de Vulnerabilidades ===");
-            System.out.println("Digite uma URL para análise: ");
+            System.out.println("Digite uma URL ou IP para análise: ");
 
             Scanner scanner = new Scanner(System.in);
             String input = scanner.nextLine();
@@ -23,7 +23,7 @@ import java.util.Scanner;
                 }
             } else {
 
-                System.out.println("Entrada inválida. Forneça uma URL válida.");
+                System.out.println("Entrada inválida. Forneça uma URL ou IP válida.");
         }
 
         scanner.close();
