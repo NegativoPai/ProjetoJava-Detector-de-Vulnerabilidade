@@ -4,7 +4,6 @@ import main.java.com.example.Parser;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.util.List;
-import main.java.com.example.VulnerabilityScanner;
 
 public class Dashboard extends javax.swing.JFrame {
 
