@@ -1,13 +1,11 @@
 package JavaSwingApp;
 
 import main.java.com.example.Parser;
-import main.java.com.example.VulnerabilityScanner;
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.util.List;
+import main.java.com.example.VulnerabilityScanner;
 
-/**
- * Dashboard para escanear vulnerabilidades usando OWASP ZAP
- */
 public class Dashboard extends javax.swing.JFrame {
 
     public Dashboard() {
@@ -106,7 +104,7 @@ public class Dashboard extends javax.swing.JFrame {
 
             if ("URL válida".equals(parseResult)) {
                 resultado.append("Usando o OWASP ZAP para verificar vulnerabilidades...\n");
-                List<String> vulnerabilities = VulnerabilityScanner.scanwithOWASPZAP(input);
+                List<String> vulnerabilities = VulnerabilityScanner.scanWithOWASPZAP(input);
 
                 if (vulnerabilities.isEmpty()) {
                     resultado.append("Nenhuma vulnerabilidade encontrada.\n");
